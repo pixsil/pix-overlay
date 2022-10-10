@@ -15,23 +15,24 @@ Find this project useful? You can support me with a Paypal donation:
 For a quick install, run this from your project root:
 ```bash
 mkdir -p resources/js/tools/vue-form
-wget -O resources/js/tools/vue-form/vue-form.js https://raw.githubusercontent.com/pixsil/vueform/main/vueForm.js
-wget -O resources/js/tools/vue-form/vue-error.js https://raw.githubusercontent.com/pixsil/vueform/main/vueError.js
+wget -O resources/js/tools/pix-overlay/pix-overlay.js https://raw.githubusercontent.com/pixsil/pix-overlay/main/pix-overlay/pix-overlay.js
+wget -O resources/js/tools/pix-overlay/pix-overlay.vue https://raw.githubusercontent.com/pixsil/pix-overlay/main/pix-overlay/pix-overlay.vue
 ```
 
 Add this to your app.js
 ```bash
-require('./tools/vue-form/vue-form.js');
-require('./tools/vue-form/vue-error.js');
+// import
+import PixOverlay from "./tools/pix-overlay/pix-overlay";
+
+
+// use in vue
+Vue.use(PixOverlay);
 ```
 
 ## Usage
 
-
-
-## Additional knowledge
-
-
-## Example
-
-Check the example folder for a Vue component example
+```js
+<pix-overlay :show="loading">
+    // some html
+</pix-overlay>
+```
