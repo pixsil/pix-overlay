@@ -20,7 +20,7 @@ wget -O resources/js/tools/pix-overlay/pix-overlay.vue https://raw.githubusercon
 ```
 
 Add this to your app.js
-```bash
+```javascript
 // import
 import PixOverlay from "./tools/pix-overlay/pix-overlay";
 
@@ -31,7 +31,7 @@ Vue.use(PixOverlay);
 
 ## Usage
 
-```js
+```html
 <pix-overlay :show="loading">
     // some html
 </pix-overlay>
