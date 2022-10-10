@@ -14,7 +14,7 @@ Find this project useful? You can support me with a Paypal donation:
 
 For a quick install, run this from your project root:
 ```bash
-mkdir -p resources/js/tools/vue-form
+mkdir -p resources/js/tools/pix-overlay
 wget -O resources/js/tools/pix-overlay/pix-overlay.js https://raw.githubusercontent.com/pixsil/pix-overlay/main/pix-overlay/pix-overlay.js
 wget -O resources/js/tools/pix-overlay/pix-overlay.vue https://raw.githubusercontent.com/pixsil/pix-overlay/main/pix-overlay/pix-overlay.vue
 ```
